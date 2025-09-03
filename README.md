@@ -15,7 +15,7 @@ A responsive weather application built with **React** and **Material-UI** that a
 ## 📦 Installation & Setup
 
 1. Clone the repository
-   git clone https://github.com/your-username/weather-visit-app.git
+   https://github.com/sambit572/weather-visit-app.git
 
 🎯 Usage
 Enter the name of a city in the input box.
