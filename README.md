@@ -10,7 +10,7 @@ A responsive weather application built with **React** and **Material-UI** that a
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js, Material-UI  
-- **API:** OpenWeatherMap (or whichever API you are using)  
+- **API:** OpenWeatherMap 
 
 ## 📦 Installation & Setup
 
