@@ -16,31 +16,64 @@ export default function InfoBox({info}){
 
 
 
-    return(
-        
-        <div className="infoBox">
-            <div className="cardContainer">
-            <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image={info.humidity>80 ? RAIN_URL:info.temp> 15?HOT_URL:COLD_URL}
-        title="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {info.city}
-        </Typography>
-        <Typography variant="body2"  color= 'text.secondary' component={"span"}>
-          <div>FeelsLike={info.feelsLike}&deg;C</div>
-          <div>Tempareture={info.temp}&deg;C</div>
-          <div>Humidity={info.humidity}</div>
-          <div>TemparetureMax={info.tempMax}&deg;C</div>
-          <div>TemparetureMin={info.tempMin}&deg;C</div>
-          {/* <div>Weather={info.weather}</div> */}
-        </Typography>
-      </CardContent>
-    </Card>
-        </div>
-        </div>
-    )
+    return (
+  <div className="infoBox">
+    <div className="cardContainer">
+      <Card
+        sx={{
+          maxWidth: 360,
+          borderRadius: "20px",
+          boxShadow: "0px 8px 25px rgba(0,0,0,0.15)",
+          overflow: "hidden",
+          backdropFilter: "blur(10px)",
+          background: "rgba(255,255,255,0.75)"
+        }}
+      >
+        <CardMedia
+          sx={{
+            height: 180,
+            position: "relative",
+            filter: "brightness(0.9)"
+          }}
+          image={
+            info.humidity > 80
+              ? RAIN_URL
+              : info.temp > 15
+              ? HOT_URL
+              : COLD_URL
+          }
+        />
+
+        <CardContent sx={{ textAlign: "center", padding: "22px" }}>
+          <Typography
+            gutterBottom
+            variant="h4"
+            component="div"
+            sx={{ fontWeight: 700, color: "#1e1e1e" }}
+          >
+            {info.city}
+          </Typography>
+
+          <Typography
+            variant="body2"
+            component="span"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+              fontSize: "16px",
+              color: "#333"
+            }}
+          >
+            <div>🌡️ Feels Like: <b>{info.feelsLike}°C</b></div>
+            <div>🌡️ Temperature: <b>{info.temp}°C</b></div>
+            <div>💧 Humidity: <b>{info.humidity}%</b></div>
+            <div>⬆️ Max: <b>{info.tempMax}°C</b></div>
+            <div>⬇️ Min: <b>{info.tempMin}°C</b></div>
+          </Typography>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+);
 }
