@@ -1,35 +1,54 @@
 # 🌦️ Weather Visit App
-A responsive weather application built with **React** and **Material-UI** that allows users to check the current weather of any city by simply entering its name.  
+
+Weather Visit App is a responsive web application built using **React.js** and **Material-UI** that allows users to check real-time weather information for any city. The application fetches live weather data from the OpenWeatherMap API and presents it through a clean and user-friendly interface.
+
+---
 
 ## 🚀 Features
-- 🌍 Search weather by city name  
-- 📱 Fully responsive design with Material-UI  
-- 🌡️ Displays temperature, weather conditions, and location  
-- ⚡ Fast and simple user interface  
-- 🔄 Real-time data fetched from an open weather API  
+
+- Search current weather by city name
+- Displays temperature, weather condition, and location
+- Responsive UI built with Material-UI
+- Real-time weather data using OpenWeatherMap API
+- Fast and intuitive user experience
+- Client-side input validation and error handling
+
+---
 
 ## 🛠️ Tech Stack
-- **Frontend:** React.js, Material-UI  
-- **API:** OpenWeatherMap 
+
+### Frontend
+- React.js
+- Material-UI (MUI)
+
+### API
+- OpenWeatherMap API
+
+---
+
+## 🌐 Live Demo
+
+🔗 **Live Application:** https://sambit572.github.io/weather-visit-app/
+
+---
 
 ## 📦 Installation & Setup
 
-1. Clone the repository
-   https://github.com/sambit572/weather-visit-app.git
+### Prerequisites
+- Node.js
+- npm
 
-🎯 Usage
-Enter the name of a city in the input box.
-Click Search (or press Enter).
-Get instant weather details including temperature, condition, and location.
+### Steps
 
-📂 Project Structure
-weather-visit-app/
-│── public/
-│── src/
-│   ├── components/
-│   ├── App.js
-│   ├── index.js
-│── package.json
-│── README.md
+```bash
+# Clone the repository
+git clone https://github.com/sambit572/weather-visit-app.git
 
+# Navigate to project directory
+cd weather-visit-app
 
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
